@@ -12,3 +12,13 @@ Blaine Sieck - facial recognition and menu
 - Once correctly positioned, there will be a countdown timer before the game starts
 - A soccer ball will fall from the top of the screen and your goal is to bounce it off your head and continue to do so while avoiding other falling objects
 - If one of the falling objects hits you or you drop the soccer ball the game will end and your score will be displayed on the screen
+
+![](sketch.png)
+
+**Implementation**
+- we have looked into the facial recognition API
+- discussed physics of falling objects
+- no code written yet
+
+**Plan Moving Forward**
+- implement the above ideas
