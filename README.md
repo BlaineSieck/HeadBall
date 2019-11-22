@@ -14,6 +14,7 @@ Blaine Sieck - facial recognition and menu
 - If one of the falling objects hits you or you drop the soccer ball the game will end and your score will be displayed on the screen
 
 ![](sketch.png)
+![](soccer_game_sketch.png)
 
 **Implementation**
 - we have looked into the facial recognition API
