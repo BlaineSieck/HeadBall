@@ -151,5 +151,11 @@ function draw() {
     xspeed = random(-6, 6);
     //yspeed = -yspeed;
   }
+  
+  if ((y < face_y_lower) && (x < face_x_upper) && (x > face_x_lower) && (y > face_y_upper)) {
+    yspeed = random(5, 10);
+    xspeed = random(-6, 6);
+    //yspeed = -yspeed;
+  }
 
 }
