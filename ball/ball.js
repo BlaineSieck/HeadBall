@@ -55,14 +55,16 @@ function gotFaces(error, result) {
 }
 
 function draw() {
+  
+  
   background(0);
  
-  //translate(640, 0);
-  //scale(-1.0, 1.0);
+  translate(1280, 0);
+  scale(-1.0, 1.0);
   //image(capture, 0, 0, 640, 360);
   image(capture, 0, 0, 1280, 720);
-  //translate(640, 0);
-  //scale(-1.0, 1.0);
+  translate(1280, 0);
+  scale(-1.0, 1.0);
   
   // Just look at the first face and draw all the points
   if (detections.length > 0) {
@@ -74,31 +76,31 @@ function draw() {
         stroke(255,0,0);
         tr_x = points[i]._x;
         tr_y = points[i]._y;
-        point(points[i]._x, points[i]._y);
-        pointpositionsx[0] = points[i]._x;
+        point(1280 - points[i]._x, points[i]._y);
+        pointpositionsx[0] = 1280 - points[i]._x;
         pointpositionsy[0] = points[i]._y;
       }
       if(i == 0) {
         tl_x = points[i]._x;
         tl_y = points[i]._y;
-        point(points[i]._x, points[i]._y);
-        pointpositionsx[1] = points[i]._x;
+        point(1280 - points[i]._x, points[i]._y);
+        pointpositionsx[1] = 1280 - points[i]._x;
         pointpositionsy[1] = points[i]._y;
       }
       if(i == 3) {
         bl_x = points[i]._x;
         bl_y = points[i]._y;
         stroke(0,255,0);
-        point(points[i]._x, points[i]._y);
-        pointpositionsx[2] = points[i]._x;
+        point(1280 - points[i]._x, points[i]._y);
+        pointpositionsx[2] = 1280 - points[i]._x;
         pointpositionsy[2] = points[i]._y;
       }
       if(i == 12) {
         br_x = points[i]._x;
         br_y = points[i]._y;
         stroke(0,0,255);
-        point(points[i]._x, points[i]._y);
-        pointpositionsx[3] = points[i]._x;
+        point(1280 - points[i]._x, points[i]._y);
+        pointpositionsx[3] = 1280 - points[i]._x;
         pointpositionsy[3] = points[i]._y;
       }
     }
