@@ -20,6 +20,16 @@ let yspeed = 2;
 face_x = 0;
 face_y = 0;
 
+var tl_x;
+var tl_y;
+var bl_x;
+var bl_y;
+var tr_x;
+var tr_y;
+var br_x;
+var br_y;
+
+
 let r = 25;
 
 function setup() {
@@ -66,22 +76,36 @@ function draw() {
     for (let i = 0; i < 68 /*points.length*/; i++) {
       stroke(161, 95, 251);
       strokeWeight(4);
-      point(points[i]._x, points[i]._y);
       //I doubt this is the best way to do this but I made these two arrays to store the x and y positions of the four dots
       //that I chose as the corner dots (dots 17, 27, 4, and 13) and there are a total of 68 dots
       if(i == 16) {
+        stroke(255,0,0);
+        tr_x = points[i]._x;
+        tr_y = points[i]._y;
+        point(points[i]._x, points[i]._y);
         pointpositionsx[0] = points[i]._x;
         pointpositionsy[0] = points[i]._y;
       }
-      if(i == 26) {
+      if(i == 0) {
+        tl_x = points[i]._x;
+        tl_y = points[i]._y;
+        point(points[i]._x, points[i]._y);
         pointpositionsx[1] = points[i]._x;
         pointpositionsy[1] = points[i]._y;
       }
       if(i == 3) {
+        bl_x = points[i]._x;
+        bl_y = points[i]._y;
+        stroke(0,255,0);
+        point(points[i]._x, points[i]._y);
         pointpositionsx[2] = points[i]._x;
         pointpositionsy[2] = points[i]._y;
       }
       if(i == 12) {
+        br_x = points[i]._x;
+        br_y = points[i]._y;
+        stroke(0,0,255);
+        point(points[i]._x, points[i]._y);
         pointpositionsx[3] = points[i]._x;
         pointpositionsy[3] = points[i]._y;
       }
@@ -122,7 +146,7 @@ function draw() {
   }
    
   //here is where I would swap out the positions of the box corners with the four dots
-  if ((y < face_y_lower) && (x < face_x_upper) && (x > face_x_lower) && (y > face_y_upper)) {
+  if ((y > tl_y) && (x < tr_x) && (x > tl_x) && (y < br_y)) {
     yspeed = random(5, 10);
     xspeed = random(-6, 6);
     //yspeed = -yspeed;
