@@ -1,9 +1,3 @@
-//so right now it runs kind of sluggish in the browser and it takes a second for 
-//the facial recognition to kick in but it should eventually
-
-//also it runs with a duplicate window that I can't figure out how to get rid of but that's not a
-//huge problem right now
-
 let capture; 
 
 // ml5 Face Detection Model
@@ -33,10 +27,12 @@ var br_y;
 let r = 25;
 
 function setup() {
-  createCanvas(640, 360);
+  //createCanvas(640, 360);
+  createCanvas(1280, 720);
   // Creat the video and start face tracking
   capture = createCapture(VIDEO);
-  capture.size(640, 360);
+  //capture.size(640, 360);
+  capture.size(1280, 720);
   capture.hide();
   // Only need landmarks for this example
   const faceOptions = { withLandmarks: true, withExpressions: false, withDescriptors: false ,};
@@ -60,13 +56,11 @@ function gotFaces(error, result) {
 
 function draw() {
   background(0);
-  
-  //here I was messing with trying to get the webcam to be a mirror image so when you 
-  //move left you actually move left on the screen
-  //i just don't know how to also translate and scale the dots on your face so the positioning is correct
+ 
   //translate(640, 0);
   //scale(-1.0, 1.0);
-  image(capture, 0, 0, 640, 360);
+  //image(capture, 0, 0, 640, 360);
+  image(capture, 0, 0, 1280, 720);
   //translate(640, 0);
   //scale(-1.0, 1.0);
   
@@ -76,8 +70,6 @@ function draw() {
     for (let i = 0; i < 68 /*points.length*/; i++) {
       stroke(161, 95, 251);
       strokeWeight(4);
-      //I doubt this is the best way to do this but I made these two arrays to store the x and y positions of the four dots
-      //that I chose as the corner dots (dots 17, 27, 4, and 13) and there are a total of 68 dots
       if(i == 16) {
         stroke(255,0,0);
         tr_x = points[i]._x;
@@ -109,13 +101,8 @@ function draw() {
         pointpositionsx[3] = points[i]._x;
         pointpositionsy[3] = points[i]._y;
       }
-      //print("Point " + i + "x: " + points[i]._x + ", y: " + points[i]._y); 
     }
   }
-  
-  //trying to figure out if I have the right points selected
-  //print("Y: 0 = " + pointpositionsy[0] + " 1 = " + pointpositionsy[1] + " 2 = " + pointpositionsy[2] + " 3 = " + pointpositionsy[3]);
-  //print("X: 0 = " + pointpositionsx[0] + " 1 = " + pointpositionsx[1] + " 2 = " + pointpositionsx[2] + " 3 = " + pointpositionsx[3]);
   
   color(0, 255, 0);
   ellipse(x, y - r, r*2, r*2);
@@ -152,10 +139,11 @@ function draw() {
     //yspeed = -yspeed;
   }
   
-  if ((y < face_y_lower) && (x < face_x_upper) && (x > face_x_lower) && (y > face_y_upper)) {
+   if ((y < face_y_lower) && (x < face_x_upper) && (x > face_x_lower) && (y > face_y_upper)) {
     yspeed = random(5, 10);
     xspeed = random(-6, 6);
     //yspeed = -yspeed;
   }
+
 
 }
