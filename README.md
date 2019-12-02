@@ -27,9 +27,9 @@ Blaine Sieck - facial recognition and menu
 # User Study
 
 **Task Description**  
-- the user will move around in order to bounce the ball on their head (in this case for the demo, the facial recognition is not yet linked to the ball collisions, so a placeholder box will also be displayed and can be controlled by the user manually to bounce the ball)
+- the user will move around in frame of the webcam in order to bounce the ball off of their head
 
 **Hypothesis**  
-- the demo task is fairly straight forward and there is no real way to fail or misunderstand
 - we believe we may run into some confusion regarding the final product since the demo is a very early version of the final game and is missing a significant amount of other features that will be implemented in the future
+- the ball physics are also kind of strange at the moment and make bouncing the ball on your head quite difficult, which may frustrate users (however, the final game should be much more enjoyable)
 
