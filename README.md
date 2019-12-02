@@ -23,3 +23,11 @@ Blaine Sieck - facial recognition and menu
 
 **Plan Moving Forward**
 - implement the above ideas
+
+# User Study
+
+**Task Description**  
+- the user will move around in order to bounce the ball on their head (in this case for the demo, the facial recognition is not yet linked to the ball collisions, so a placeholder box will also be displayed and can be controlled by the user manually to bounce the ball)
+
+**Hypothesis**  
+- the task is very straight forward and there is no real way to fail or misunderstand so we believe users will have no trouble grasping our demo and realizing what the finished product could look like
