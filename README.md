@@ -38,7 +38,18 @@ Blaine Sieck - facial recognition and menu
 
 # Final Product  
 
+**How it works**  
+
+- We used face-api.js for the facial recognition which draws dots on your face and tracks you as you move
+- The rest of the code was written in p5.js and a small amount of HTML and CSS
+- A soccer ball and rocks fall from the top of the screen and you must move in order to bounce the soccer ball on your head while avoiding the rocks or letting the soccer ball hit the ground
+- Simply press the start button at the main menu, or after finishing a game press any key to begin a new game
+- Your score is tallied in the bottom right hand corner
+- You may quit the game at any point with the quit button
+
 **Demo Gif**  
   
 ![](p2Final.group12.gif)
+
+
 
