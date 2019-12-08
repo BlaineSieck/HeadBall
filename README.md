@@ -1,7 +1,7 @@
 # HeadBall
 
-Github Repo: https://github.com/BlaineSieck/HeadBall  
-Presentation Page: https://blainesieck.github.io/HeadBall/
+[Github Repo](https://github.com/BlaineSieck/HeadBall) (e.g. https://github.com/BlaineSieck/HeadBall)  
+[Presentation Page](https://blainesieck.github.io/HeadBall/) (e.g. https://blainesieck.github.io/HeadBall/, contains content of this README)
 
 **Team Members**
 
