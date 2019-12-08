@@ -33,3 +33,9 @@ Blaine Sieck - facial recognition and menu
 - we believe we may run into some confusion regarding the final product since the demo is a very early version of the final game and is missing a significant amount of other features that will be implemented in the future
 - the ball physics are also kind of strange at the moment and make bouncing the ball on your head quite difficult, which may frustrate users (however, the final game should be much more enjoyable)
 
+# Final Product  
+
+**Demo Gif**  
+  
+![](p2Final.group12.gif)
+
