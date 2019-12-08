@@ -1,5 +1,8 @@
 # HeadBall
 
+Github Repo: https://github.com/BlaineSieck/HeadBall  
+Presentation Page: https://blainesieck.github.io/HeadBall/
+
 **Team Members**
 
 Gabriel Costanzo (Team Leader) - falling objects and collision control    
